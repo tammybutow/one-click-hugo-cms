@@ -1,5 +1,7 @@
 {{ define "main" }}
 
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }}
 
 {{ partial "short-text" .Params.blurb}}
@@ -11,3 +13,4 @@
 {{ partial "blog" . }}
 
 {{ end }}
+
